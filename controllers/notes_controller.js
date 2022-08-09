@@ -17,4 +17,13 @@ notes.get("/data/seed", async (req, res) => {
   console.log(seeded);
 });
 
+notes.get("/new", (req, res) => {
+  res.render("new", {});
+});
+
+notes.post("/", (req, res) => {
+  console.log(req.body);
+  // Note.create(req.body);
+});
+
 module.exports = notes;
