@@ -8,13 +8,13 @@ function New() {
       <form action="/notes" method="POST">
         <label htmlFor="title">Name</label>
         <input type="text" name="title" id="title" required />
-        <label htmlFor="note-body">Details</label>
-        <input type="text" name="note-body" id="note-body" required />
-        <label htmlFor="created-at">Created At:</label>
+        <label htmlFor="noteBody">Details</label>
+        <input type="text" name="noteBody" id="noteBody" required />
+        <label htmlFor="createdAt">Created At:</label>
         <input
           type="text"
-          name="created-at"
-          id="created-at"
+          name="createdAt"
+          id="createdAt"
           value={new Date().toLocaleString()}
         />
         <input type="submit" />

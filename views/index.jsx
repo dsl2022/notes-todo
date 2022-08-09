@@ -11,7 +11,12 @@ function Index({ notes, title }) {
     </li>
   ));
   return (
-    <Default title="temp">
+    <Default title="">
+      <div className="newButton">
+        <a href="/notes/new">
+          <button>Add a new note</button>
+        </a>
+      </div>
       <h2>{title}</h2>
       <ul>{notesRendered}</ul>
     </Default>

@@ -22,8 +22,8 @@ notes.get("/new", (req, res) => {
 });
 
 notes.post("/", (req, res) => {
-  console.log(req.body);
-  // Note.create(req.body);
+  Note.create(req.body);
+  res.redirect("/notes");
 });
 
 module.exports = notes;
